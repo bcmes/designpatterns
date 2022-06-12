@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Budget budget = new Budget(new BigDecimal("100"));
         TaxCalculator taxCalculator = new TaxCalculator();
-        System.out.println(taxCalculator.calculator(budget, TaxType.ICMS));
+        BigDecimal taxValue = taxCalculator.calculate(budget, new Icms());
+        System.out.println("Tax Value = " + taxValue);
     }
 }
