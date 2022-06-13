@@ -1,5 +1,8 @@
 package com.github.bcmes.designpatterns.strategy;
 
+import com.github.bcmes.designpatterns.strategy.tax.Icms;
+import com.github.bcmes.designpatterns.strategy.tax.TaxCalculator;
+
 import java.math.BigDecimal;
 
 public class Main {
