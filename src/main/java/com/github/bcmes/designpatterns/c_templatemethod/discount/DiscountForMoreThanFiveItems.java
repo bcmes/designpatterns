@@ -12,7 +12,7 @@ public class DiscountForMoreThanFiveItems extends Discount {
 
     @Override
     protected BigDecimal calculation(Budget budget){
-        return budget.getValue().multiply(new BigDecimal("0.05"));
+        return new BigDecimal("200");
     }
 
     @Override

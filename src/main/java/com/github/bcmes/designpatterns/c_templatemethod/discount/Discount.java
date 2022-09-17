@@ -16,7 +16,7 @@ public abstract class Discount {
         if (isApplicable(budget)) {
             return calculation(budget);
         }
-        return nextDiscount.calculation(budget);
+        return nextDiscount.calculate(budget);
     }
 
     protected abstract BigDecimal calculation(Budget budget);
